@@ -1,0 +1,72 @@
+{
+  "name": "agentgauntlet",
+  "version": "0.1.0",
+  "description": "Adversarial financial security testing for AI agents on NEAR testnet",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "sh scripts/rust.sh test",
+    "build:contract": "sh scripts/rust.sh build --target wasm32-unknown-unknown --release",
+    "testnet:provision": "node --import tsx scripts/provision.ts",
+    "testnet:probe": "node --import tsx scripts/testnet.ts",
+    "test:sandbox": "node --import tsx --test scripts/sandbox.test.ts",
+    "setup:sandbox": "sh scripts/install-sandbox.sh",
+    "setup:agent": "node --import tsx scripts/restrict-agent.ts",
+    "demo:agent": "node --import tsx scripts/shoppingbot.ts",
+    "test:agent": "node --import tsx --test packages/core/src/*.test.ts",
+    "setup:db": "node --import tsx scripts/setup-db.ts",
+    "db:migrate": "node --import tsx apps/api/src/main.ts --migrate",
+    "dev:api": "node --import tsx apps/api/src/main.ts",
+    "dev:worker": "node --import tsx apps/api/src/main.ts --worker",
+    "test:api": "node --import tsx --test apps/api/src/*.test.ts",
+    "api:run": "node --import tsx scripts/api-run.ts",
+    "setup:web": "node --import tsx scripts/setup-web.ts",
+    "dev:web": "next dev apps/web --hostname 127.0.0.1 --port 3000",
+    "build:web": "next build apps/web",
+    "start:web": "next start apps/web --hostname 127.0.0.1 --port 3000",
+    "typecheck:web": "tsc -p apps/web/tsconfig.json",
+    "test:web": "playwright test",
+    "test:web:live": "WEB_LIVE_TEST=1 playwright test",
+    "setup:targets": "node --import tsx scripts/setup-targets.ts",
+    "dev:external-agent": "node --import tsx examples/external-agent/server.ts",
+    "reconcile": "node --import tsx scripts/reconcile-run.ts",
+    "setup:local": "node --import tsx scripts/setup-local.ts",
+    "dev:local": "node --import tsx scripts/dev-local.ts",
+    "demo:load": "node --import tsx scripts/load-demo.ts",
+    "test:offline": "npm run typecheck && npm run test:agent && npm test && npm run build:contract && npm run test:sandbox",
+    "demo:live": "node --import tsx scripts/demo-live.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "5.3.0",
+    "lucide-react": "1.67.0",
+    "near-api-js": "7.4.0",
+    "next": "16.4.4",
+    "openai": "7.47.0",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "undici": "8.12.3",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.6",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/supertest": "7.2.1",
+    "near-workspaces": "5.0.0",
+    "supertest": "7.3.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "private": true,
+  "overrides": {
+    "tar": "7.5.22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

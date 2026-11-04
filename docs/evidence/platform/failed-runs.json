@@ -1,0 +1,190 @@
+[
+  {
+    "runId": "073c25b4-90a3-452f-b267-6e3148258c0b",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:55:16.593Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "110b490a-105e-4078-8c61-04b1112de2b9",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:55:15.573Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "45e3dc25-e594-4266-bf40-d9b9db29db73",
+    "replayOf": "d88593b0-2a51-497f-a70a-e00d95702a5d",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T22:05:55.168Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "submit",
+      "name": "Error",
+      "message": "{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -429, \"message\": \"WARNING! THIS ENDPOINT IS DEPRECATED! STOP USING IT NOW! Switch to https://fastnear.com or alternative RPC providers at https://docs.near.org/api/rpc/providers\"}, \"id\": \"1\"}"
+    },
+    "attempts": [
+      {
+        "attemptId": "45e3dc25-e594-4266-bf40-d9b9db29db73:1",
+        "request": {
+          "recipient": "ag-supplier-mvzvp425.testnet",
+          "amount": "0.01",
+          "invoiceId": "cloudhost-2026-11",
+          "reason": "CloudHost hosting invoice cloudhost-2026-11"
+        },
+        "violations": []
+      }
+    ]
+  },
+  {
+    "runId": "4d407dc6-c152-4544-8f48-4fde8ce5df52",
+    "replayOf": "79828e11-40b5-4c80-a71d-89f8fae8b9c2",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:59:43.268Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "TypeError",
+      "message": "fetch failed"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "70bc54f1-bfe1-4a9b-b64c-46d53cd7127f",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T22:01:14.804Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "TypeError",
+      "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+      "message": "fetch failed"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "79828e11-40b5-4c80-a71d-89f8fae8b9c2",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:55:14.524Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "7ad922ed-3687-4be0-8cdd-29a2015908e1",
+    "replayOf": "b4682035-fddf-45a0-8bab-708387d92036",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T21:59:42.239Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "TypeError",
+      "message": "fetch failed"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "b4682035-fddf-45a0-8bab-708387d92036",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T21:55:12.478Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "b51ab068-45f9-4822-9eb1-318ae42670b5",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T22:05:56.720Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "Error",
+      "message": "{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -429, \"message\": \"WARNING! THIS ENDPOINT IS DEPRECATED! STOP USING IT NOW! Switch to https://fastnear.com or alternative RPC providers at https://docs.near.org/api/rpc/providers\"}, \"id\": \"1\"}"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "c4fa32cf-81fa-445c-b84e-37c759bba439",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T21:52:37.981Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "d88593b0-2a51-497f-a70a-e00d95702a5d",
+    "replayOf": "f52843ee-67cf-4827-b5ab-b74fc5146838",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T22:00:42.356Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "TypeError",
+      "message": "fetch failed"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "e3da10f4-6462-439f-a0f8-7efe02c4dbfb",
+    "replayOf": "110b490a-105e-4078-8c61-04b1112de2b9",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:59:44.291Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "name": "TypeError",
+      "message": "fetch failed"
+    },
+    "attempts": []
+  },
+  {
+    "runId": "f1ad3ea6-cdf6-492e-bc15-6dc60e093f23",
+    "mode": "probe",
+    "finishedAt": "2026-11-03T21:55:13.511Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "prepare",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": []
+  },
+  {
+    "runId": "f52843ee-67cf-4827-b5ab-b74fc5146838",
+    "mode": "agent",
+    "finishedAt": "2026-11-03T21:55:58.731Z",
+    "error": {
+      "code": "EXECUTION_INCOMPLETE",
+      "stage": "submit",
+      "message": "Execution or independent verification failed; inspect recorded evidence before replaying."
+    },
+    "attempts": [
+      {
+        "attemptId": "f52843ee-67cf-4827-b5ab-b74fc5146838:1",
+        "request": {
+          "recipient": "ag-supplier-mvzvp425.testnet",
+          "amount": "0.01",
+          "invoiceId": "cloudhost-2026-11",
+          "reason": "Payment for CloudHost hosting service invoice cloudhost-2026-11"
+        },
+        "violations": []
+      }
+    ]
+  }
+]

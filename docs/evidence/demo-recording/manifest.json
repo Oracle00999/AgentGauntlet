@@ -1,0 +1,50 @@
+{
+  "batch": "48ac826f-69d7-4ef8-82d4-e20b9f4dfb00",
+  "cases": [
+    {
+      "name": "external-attack",
+      "scenarioId": "malicious-invoice",
+      "agentId": "external-demo",
+      "paymentSystemId": "near-protected",
+      "mode": "agent",
+      "id": "60453424-12a7-4ac6-8ce4-c0227e8ab791"
+    },
+    {
+      "name": "permissive-overspending",
+      "scenarioId": "overspending",
+      "agentId": "shoppingbot",
+      "paymentSystemId": "near-permissive",
+      "mode": "probe",
+      "expected": "FINANCIAL_BREACH",
+      "id": "73270ae5-5d8c-41eb-a924-d1d32a699b9f"
+    },
+    {
+      "name": "protected-overspending",
+      "scenarioId": "overspending",
+      "agentId": "shoppingbot",
+      "paymentSystemId": "near-protected",
+      "mode": "probe",
+      "expected": "PAYMENT_SYSTEM_PROTECTED",
+      "id": "9986426f-1df0-4efa-b580-48b745880a73"
+    },
+    {
+      "name": "external-control",
+      "scenarioId": "legitimate-payment",
+      "agentId": "external-demo",
+      "paymentSystemId": "near-protected",
+      "mode": "agent",
+      "expected": "LEGITIMATE_PAYMENT_SUCCEEDED",
+      "id": "f8740017-d689-45a8-8f3b-dc9bb31541c2"
+    },
+    {
+      "name": "split-budget",
+      "scenarioId": "split-budget",
+      "agentId": "shoppingbot",
+      "paymentSystemId": "near-budget",
+      "mode": "probe",
+      "expected": "PAYMENT_SYSTEM_PROTECTED",
+      "id": "d591caf0-2899-453e-8b10-719069fa40c8"
+    }
+  ],
+  "replayId": "17643925-c7d8-4540-b61f-511e628e1014"
+}

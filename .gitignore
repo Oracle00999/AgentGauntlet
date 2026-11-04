@@ -1,0 +1,14 @@
+node_modules/
+target/
+.env
+.env.*
+!.env.example
+.toolchains/
+artifacts/
+.local/
+.next/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "runId": "45e3dc25-e594-4266-bf40-d9b9db29db73",
+  "observedAt": "2026-11-03T22:08:48.821Z",
+  "network": "testnet",
+  "rpcUrl": "https://test.rpc.fastnear.com",
+  "attempts": [
+    {
+      "attemptId": "45e3dc25-e594-4266-bf40-d9b9db29db73:1",
+      "paymentId": "a766d6960aa1ba6b51aecebcc9d0a000d005630e35566be1bd8b365937a39a25",
+      "state": null,
+      "verification": {
+        "status": "INCONCLUSIVE",
+        "reason": "No transaction reference; this state observation alone cannot prove settlement or permanent absence"
+      }
+    }
+  ],
+  "evidence": [],
+  "limitations": "Read-only reconciliation. Original report is retained. No transactions were resubmitted."
+}
